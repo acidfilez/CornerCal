@@ -121,7 +121,7 @@ class CalendarController: NSObject {
         
         let fireAt = calendar.date(byAdding: .second, value: fireAfter, to: now)!
         timer = Timer(fire: fireAt, interval: tickInterval, repeats: true, block: onTick)
-        RunLoop.main.add(timer!, forMode: RunLoopMode.commonModes)
+        RunLoop.main.add(timer!, forMode: RunLoop.Mode.common)
         
         // tick once to update straight away
         lastTick = calendar.date(byAdding: .second, value: Int(-tickInterval), to: now)

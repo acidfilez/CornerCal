@@ -162,17 +162,15 @@ IA
         <window title="Settings" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="2fn-5w-bKg">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowCollectionBehavior key="collectionBehavior" fullScreenNone="YES"/>
-            <rect key="contentRect" x="564" y="309" width="410" height="250"/>
+            <rect key="contentRect" x="564" y="309" width="410" height="279"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1178"/>
-            <value key="minSize" type="size" width="410" height="250"/>
-            <value key="maxSize" type="size" width="410" height="250"/>
+            <value key="maxSize" type="size" width="410" height="279"/>
             <view key="contentView" id="z56-gW-g35">
-                <rect key="frame" x="0.0" y="0.0" width="410" height="250"/>
+                <rect key="frame" x="0.0" y="0.0" width="410" height="279"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="DsG-Kg-fxR">
-                        <rect key="frame" x="139" y="194" width="220" height="30"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <button tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="DsG-Kg-fxR">
+                        <rect key="frame" x="129" y="223" width="192" height="18"/>
                         <buttonCell key="cell" type="check" title="Show the time with seconds" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="YBS-XV-zIF">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
@@ -181,9 +179,11 @@ IA
                             <action selector="checkBoxClicked:" target="MUN-z6-qDm" id="0DQ-oF-JYj"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="E8n-nc-rfB">
-                        <rect key="frame" x="139" y="162" width="220" height="30"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <button tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="E8n-nc-rfB">
+                        <rect key="frame" x="129" y="191" width="230" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="jy0-Nd-b4h"/>
+                        </constraints>
                         <buttonCell key="cell" type="check" title="Use a 24-hour clock" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="X0B-xC-XWg">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
@@ -192,9 +192,8 @@ IA
                             <action selector="checkBoxClicked:" target="MUN-z6-qDm" id="b6T-PW-c9s"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="oWQ-Vp-99m">
-                        <rect key="frame" x="139" y="130" width="220" height="30"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <button tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="oWQ-Vp-99m">
+                        <rect key="frame" x="129" y="171" width="230" height="18"/>
                         <buttonCell key="cell" type="check" title="Show AM/PM" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="wHM-Vz-n6I">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
@@ -203,9 +202,8 @@ IA
                             <action selector="checkBoxClicked:" target="MUN-z6-qDm" id="Em2-DF-Vt2"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="qib-nV-OYJ">
-                        <rect key="frame" x="139" y="66" width="220" height="30"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <button tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="qib-nV-OYJ">
+                        <rect key="frame" x="129" y="95" width="86" height="18"/>
                         <buttonCell key="cell" type="check" title="Show date" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="BDg-ZQ-zFx">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
@@ -214,27 +212,33 @@ IA
                             <action selector="checkBoxClicked:" target="MUN-z6-qDm" id="NrB-aN-wmX"/>
                         </connections>
                     </button>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DuK-RT-lm9">
-                        <rect key="frame" x="31" y="196" width="93" height="22"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DuK-RT-lm9">
+                        <rect key="frame" x="31" y="225" width="83" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="XMa-J0-eMn"/>
+                        </constraints>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Time options" usesSingleLineMode="YES" id="V7g-VS-7tR">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YMg-hJ-eoO">
-                        <rect key="frame" x="31" y="68" width="93" height="22"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YMg-hJ-eoO">
+                        <rect key="frame" x="31" y="97" width="83" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="ADI-HO-AaR"/>
+                        </constraints>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Date options" usesSingleLineMode="YES" id="fRr-jF-hAT">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <button fixedFrame="YES" tag="5" translatesAutoresizingMaskIntoConstraints="NO" id="sw3-iQ-hki">
-                        <rect key="frame" x="139" y="34" width="220" height="30"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <button tag="5" translatesAutoresizingMaskIntoConstraints="NO" id="sw3-iQ-hki">
+                        <rect key="frame" x="129" y="63" width="230" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="blR-dv-GM5"/>
+                        </constraints>
                         <buttonCell key="cell" type="check" title="Show the day of the week" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="SJf-Zh-g4M">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
@@ -243,12 +247,46 @@ IA
                             <action selector="checkBoxClicked:" target="MUN-z6-qDm" id="9o9-nG-vbd"/>
                         </connections>
                     </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5Zz-Zq-df6">
+                        <rect key="frame" x="174" y="13" width="63" height="32"/>
+                        <buttonCell key="cell" type="push" title="Exit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="wbB-dE-DCA">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="buttonExitPressed:" target="MUN-z6-qDm" id="k0v-uo-0ya"/>
+                        </connections>
+                    </button>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="qib-nV-OYJ" firstAttribute="leading" secondItem="YMg-hJ-eoO" secondAttribute="trailing" constant="19" id="4hn-vC-czV"/>
+                    <constraint firstItem="YMg-hJ-eoO" firstAttribute="bottom" secondItem="qib-nV-OYJ" secondAttribute="bottom" id="69I-WL-MwW"/>
+                    <constraint firstItem="DuK-RT-lm9" firstAttribute="trailing" secondItem="YMg-hJ-eoO" secondAttribute="trailing" id="7ec-pE-SUW"/>
+                    <constraint firstItem="5Zz-Zq-df6" firstAttribute="top" secondItem="sw3-iQ-hki" secondAttribute="bottom" constant="24" id="ADi-hC-EMw"/>
+                    <constraint firstItem="DuK-RT-lm9" firstAttribute="bottom" secondItem="DsG-Kg-fxR" secondAttribute="bottom" id="AGV-5A-PBt"/>
+                    <constraint firstItem="E8n-nc-rfB" firstAttribute="top" secondItem="DsG-Kg-fxR" secondAttribute="bottom" constant="6" symbolic="YES" id="AKJ-cZ-qRM"/>
+                    <constraint firstItem="sw3-iQ-hki" firstAttribute="leading" secondItem="oWQ-Vp-99m" secondAttribute="leading" id="Amr-bk-M0p"/>
+                    <constraint firstItem="sw3-iQ-hki" firstAttribute="trailing" secondItem="E8n-nc-rfB" secondAttribute="trailing" id="B6D-mT-Ita"/>
+                    <constraint firstAttribute="trailing" secondItem="DsG-Kg-fxR" secondAttribute="trailing" constant="91" id="KS1-eg-TrP"/>
+                    <constraint firstItem="DuK-RT-lm9" firstAttribute="leading" secondItem="YMg-hJ-eoO" secondAttribute="leading" id="LqN-xE-Flb"/>
+                    <constraint firstItem="sw3-iQ-hki" firstAttribute="leading" secondItem="qib-nV-OYJ" secondAttribute="leading" id="R9U-qM-IxP"/>
+                    <constraint firstAttribute="trailing" secondItem="sw3-iQ-hki" secondAttribute="trailing" constant="53" id="aoO-SZ-Z9g"/>
+                    <constraint firstItem="DsG-Kg-fxR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DuK-RT-lm9" secondAttribute="trailing" symbolic="YES" id="atN-KK-mmw"/>
+                    <constraint firstItem="5Zz-Zq-df6" firstAttribute="centerX" secondItem="z56-gW-g35" secondAttribute="centerX" id="avq-fv-VG1"/>
+                    <constraint firstAttribute="bottom" secondItem="YMg-hJ-eoO" secondAttribute="bottom" constant="97" id="ds2-JH-CFk"/>
+                    <constraint firstItem="DuK-RT-lm9" firstAttribute="top" secondItem="z56-gW-g35" secondAttribute="top" constant="32" id="eec-XQ-wlb"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qib-nV-OYJ" secondAttribute="trailing" constant="20" symbolic="YES" id="eja-ZK-Krw"/>
+                    <constraint firstItem="DuK-RT-lm9" firstAttribute="leading" secondItem="z56-gW-g35" secondAttribute="leading" constant="33" id="el2-it-3vu"/>
+                    <constraint firstItem="oWQ-Vp-99m" firstAttribute="top" secondItem="E8n-nc-rfB" secondAttribute="bottom" constant="6" symbolic="YES" id="kpg-A3-WhZ"/>
+                    <constraint firstItem="sw3-iQ-hki" firstAttribute="top" secondItem="qib-nV-OYJ" secondAttribute="bottom" constant="6" symbolic="YES" id="qjv-d5-oNc"/>
+                    <constraint firstItem="sw3-iQ-hki" firstAttribute="trailing" secondItem="oWQ-Vp-99m" secondAttribute="trailing" id="sGS-Ai-gxd"/>
+                    <constraint firstItem="sw3-iQ-hki" firstAttribute="leading" secondItem="E8n-nc-rfB" secondAttribute="leading" id="uac-A2-zEt"/>
+                </constraints>
             </view>
             <connections>
                 <outlet property="delegate" destination="MUN-z6-qDm" id="pyF-2S-Dp6"/>
             </connections>
-            <point key="canvasLocation" x="-150" y="467"/>
+            <point key="canvasLocation" x="-150" y="480.5"/>
         </window>
     </objects>
 </document>

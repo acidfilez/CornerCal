@@ -69,16 +69,16 @@ class MainMenuController: NSObject, NSCollectionViewDataSource {
         collectionView.reloadData()
     }
     
-    private func getBasicAttributes(button: NSButton, color: NSColor, alpha: CGFloat) -> [NSAttributedStringKey : Any] {
+    private func getBasicAttributes(button: NSButton, color: NSColor, alpha: CGFloat) -> [NSAttributedString.Key : Any] {
         let style = NSMutableParagraphStyle()
         style.alignment = .center
         
         return [
-            NSAttributedStringKey.foregroundColor: color.withAlphaComponent(alpha),
-            NSAttributedStringKey.font: NSFont.systemFont(ofSize: (button.font?.pointSize)!, weight: NSFont.Weight.light),
-            NSAttributedStringKey.backgroundColor: NSColor.clear,
-            NSAttributedStringKey.paragraphStyle: style,
-            NSAttributedStringKey.kern: 0.5 // some additional character spacing
+            NSAttributedString.Key.foregroundColor: color.withAlphaComponent(alpha),
+            NSAttributedString.Key.font: NSFont.systemFont(ofSize: (button.font?.pointSize)!, weight: NSFont.Weight.light),
+            NSAttributedString.Key.backgroundColor: NSColor.clear,
+            NSAttributedString.Key.paragraphStyle: style,
+            NSAttributedString.Key.kern: 0.5 // some additional character spacing
         ]
     }
     

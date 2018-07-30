@@ -83,6 +83,8 @@ class SettingsController: NSObject, NSWindowDelegate {
             calendarController.setDateFormat()
         }
     }
-    
 
+    @IBAction func buttonExitPressed(_ sender: Any) {
+        NSApplication.shared.terminate(self)
+    }
 }
